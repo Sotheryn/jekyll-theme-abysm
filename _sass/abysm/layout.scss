@@ -1,8 +1,31 @@
-header {
-    width: 100%;
-    display:block;
-    padding:20px;
+
+a {
+    text-decoration: none;
+    color: $foreground;
 }
+
+header {
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+
+
+.container {
+    width:90%;
+    max-width: 650px;
+    margin: auto;
+    vertical-align: bottom;
+}
+
+// header menu
+.menu { float:right; width: 45%; }
+.menu ul { list-style-type: none;  text-align: right; line-height: 5em; }
+.menu ul li { display: inline; margin-left: 1.5em; }
+.menu ul li a { text-decoration: none; color: $dim; }
+.menu ul li a:hover { text-decoration: none; color: $bright; }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu+Mono&display=swap');
 
@@ -12,18 +35,66 @@ body{
     color: $foreground;
 }
 
-header h1 {
-    font-family: 'Lato', 'sans-serif';
+header .icon {
+    //font-family: 'Lato', 'sans-serif';
     margin:0;
     font-size: 5em;
+    float:left;
+    width:45%;
 }
 
-a {
-    color: $link;
+header:after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.container {
-    width: 1000px;
-    margin: auto;
-    vertical-align: bottom;
+
+// articles
+
+article {
+
+}
+
+article h1 {
+    font-size: 3em;
+    border-bottom: 2px solid $hint;
+    padding-bottom: 0.1em;
+    margin-top:0px;
+}
+
+article h2 {
+    font-size: 2em;
+    padding-bottom: 0.1em;
+}
+
+article .date{
+    color: $hint;
+}
+article .categories{ 
+    float: right;
+    a.category{ font-style: italic; color: $dim; }
+}
+
+article .content {
+    //color: white;
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: $bright;
+    }
+    a:hover{
+        color: $dim;
+    }
+}
+
+// code highlighting tweaks
+
+// wrap code
+pre {
+    overflow-x: scroll;
+}
+
+code pre.lineno {
+    color: $dim;
 }
