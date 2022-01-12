@@ -1,0 +1,13 @@
+
+$shade1: #e0f0d0;
+$shade2: #607060;
+
+$background: #101010;
+$foreground: $shade1;
+
+$header-background: #0002b0;
+$header-foreground: $shade2;
+
+$link: #ffffff;
+
+@import "abysm/normalize.scss", "abysm/font", "abysm/layout";

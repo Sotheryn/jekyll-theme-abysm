@@ -1,0 +1,29 @@
+header {
+    width: 100%;
+    display:block;
+    padding:20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu+Mono&display=swap');
+
+body{
+    font-family: 'Ubuntu Mono', 'monospace';
+    background-color: $background;
+    color: $foreground;
+}
+
+header h1 {
+    font-family: 'Lato', 'sans-serif';
+    margin:0;
+    font-size: 5em;
+}
+
+a {
+    color: $link;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    vertical-align: bottom;
+}
