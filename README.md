@@ -1,37 +1,14 @@
 # jekyll-theme-abysm
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+Abysm is pretty basic dark theme for Jekyll. It's designed to be used for GitHub pages using [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme).
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-abysm"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
+Add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-theme-abysm
+remote_theme: liamg/jekyll-theme-abysm
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-theme-abysm
-
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
 ## Contributing
 

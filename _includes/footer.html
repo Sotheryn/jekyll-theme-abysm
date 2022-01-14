@@ -1,6 +1,5 @@
-<footer class="container">
-  <div class="one-third column">
-    <ul style="list-style: none;">
+<footer>
+    <ul>
       <li>
         {% if site.author %}
           {{ site.author }}
@@ -8,17 +7,16 @@
           {{ site.title }}
         {% endif %}
       </li>
+      {% if site.email %}
       <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      {% endif %}
       {% if site.privacy_policy_url %}
         <li>
           <a href="{{ site.privacy_policy_url }}">Privacy Policy</a>
         </li>
       {% endif %}
     </ul>
-  </div>
-
-  <div class="one-third column">
-    <ul style="list-style: none;">
+    <ul>
       {% if site.github_username %}
       <li>
         <a style="text-decoration: none;" href="https://github.com/{{ site.github_username }}">
@@ -31,7 +29,6 @@
         </a>
       </li>
       {% endif %}
-
       {% if site.twitter_username %}
       <li>
         <a style="text-decoration: none;" href="https://twitter.com/{{ site.twitter_username }}">
@@ -46,9 +43,4 @@
       </li>
       {% endif %}
     </ul>
-  </div>
-
-  <div class="one-third column">
-    <p>{{ site.description | escape }}</p>
-  </div>
 </footer>

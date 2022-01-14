@@ -3,6 +3,7 @@ $bright: #ffffff;
 $dim: #444466;
 
 $hint: #884444;
+$link: #555588;
 
 $background: #202030;
 $foreground: #dddddd;
@@ -10,4 +11,4 @@ $foreground: #dddddd;
 $header-background: #0002b0;
 $header-foreground: $foreground;
 
-@import "abysm/normalize.scss", "abysm/font", "abysm/layout";
+@import "abysm/normalize", "abysm/font", "abysm/syntax", "abysm/layout";
