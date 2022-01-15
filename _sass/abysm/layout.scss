@@ -128,6 +128,17 @@ article.content, .page.content {
     a:hover{
         color: $dim;
     }
+    img {
+        display:block;
+        margin:auto;
+        max-width: 100%;
+    }
+    ul, ol {
+        li {
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+        }
+    }
 }
 
 // code highlighting tweaks
@@ -154,20 +165,20 @@ p > code {
 // responsive
 @media screen and (max-width: 1024px) {
     header{
-        width:100%;
+        width:90%;
         .icon{
             width:100%;
         }
         .menu{width:100%;}
     }
     footer{
-    width: 100%;
-    ul { display: none; }
-    ul:last-of-type { display: block; float: none;}
-}
+        width: 90%;
+        ul { display: none; }
+        ul:last-of-type { display: block; float: none;}
+    }
     .container{width: 90%;}
     .highlight:hover{
         width: 100%;
-        margin-left: 0;
+        margin: auto;
     }
 }
