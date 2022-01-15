@@ -120,6 +120,7 @@ article .categories{
 }
 
 article .content, .page.content {
+    overflow-wrap: anywhere;
     a {
         text-decoration: none;
         color: $link;
