@@ -119,9 +119,8 @@ article .categories{
     a.category{ font-style: italic; color: $dim; }
 }
 
-article.content, .page.content {
+article .content, .page.content {
     a {
-        font-weight: bold;
         text-decoration: none;
         color: $link;
     }
