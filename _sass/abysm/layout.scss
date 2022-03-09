@@ -145,7 +145,7 @@ article .content, .page.content {
 // code highlighting tweaks
 
 // wrap code
-figure.highlight {
+figure.highlight, div.highlight {
     overflow-x: scroll;
 }
 
